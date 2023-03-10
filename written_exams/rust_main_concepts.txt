@@ -1,0 +1,21 @@
+What is Rust and why is it considered a "systems programming language"?
+	aswer: Rust is a programing language fast and safe garbage_collectorless, that let us access low level and hight level of abstraction features (Thats why it is a systems programming language), with the possibility to remain fast and best of all, safe, due to it´s compiler, witch is a pain in the ass, but do not let us dump programmers commit many common mistakes related to memory safety. 
+
+
+
+Explain the ownership and borrowing system in Rust. How does it help with memory safety?
+	aswer: The ownership Rust is the main feature that allow Rust not to have a Garbage Collector, by making references on the heap move from a variable to the other,
+is possible to only have one pointer to a specific address in the memory, making it easier to free all of it. The ownership is a feature also related to the memory safety
+trait of rust, but this one have a specific operator, the `&` using it before the variables name in a functions parameter means that the variable stored on the heap wont move to the function, but its value can be used, this also means that the & operator refers to an imutable reference.
+
+
+
+What is a "lifetime" in Rust and how is it related to the ownership and borrowing system?
+	aswer: a lifetime in Rust is a way to tell the compiler that the parameters passed in wont go out of scope during its execution, meaning there wont be any dangling pointers	
+
+
+What is the difference between "mutable" and "immutable" variables in Rust?
+	aswer: a mutable varible admits beeing mutated and immutable ones cant be mutated
+
+How does Rust handle error handling?
+	aswer: It can be handle via the Result<T, error> enum, or with the ? operator, that unleashes the traceback for functions
