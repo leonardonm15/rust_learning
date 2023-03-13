@@ -1,0 +1,17 @@
+Section 2: Syntax and Language Features
+
+What is the purpose of the use keyword in Rust?
+	answer: The use keywoard lets you bring scopes within an imported chunck of code 
+
+How do you declare a variable in Rust? Give an example.
+	answer: using the keywoard let or let mut + the : operator to specify the datatype, than = and the value.
+
+What is a "tuple" in Rust and how do you create one?
+	answer: a tuple is the data structure that represents an mathematical set. It can store difrente datatypes, but can store repeated values. the declaration
+	goes something like that -> let tuple: (datatypes that will be inside your tuple) = ("hello", 1, 1.0, true);
+
+What is the difference between a "vector" and an "array" in Rust?
+	answer: The array is staticly alloced, that means that it can´t grow or shrink in size, neither it can allocate multiple datatypes, the vector can do all these things mentioned before and it also have built in methods
+
+How do you define a function in Rust? Give an example.
+	answer: fn funtion(a: int, b: int)
